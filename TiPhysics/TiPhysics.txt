@@ -1,0 +1,371 @@
+:"All Physics Formulas for the AP Test
+ClrHome
+Output(3,2,"AP Physics C Formulas"
+Output(4,7,"Version 1.0"
+Output(6,4,"Made by:"
+Output(7,6,"JH"
+Pause 
+Lbl A1
+ClrHome 
+Menu(" MECHANICS ","Vectors",B1,"Newtons 1st & 3rd law",B2,"Kinematics",B3,"Newtons 2nd Law & I/M",B4,"Work & Energy",B5,"Rotaional Kinematics",B6,"Gravity",B7,"More",A2,"Quit",QU
+Lbl A2
+ClrHome
+Menu(" ELECTRICITY ","Electrostatics",C1,"Gausses Law",C2,"DC Circuits",C3,"Magnetism",C4,"Induction",C5,"Back",A1,"Quit",QU
+
+Lbl B1
+ClrDraw
+Text(0,0,"V[r] = √((Σ(V[x])² + (Σ(V[y])²)
+Text(28,0,"θ = tan^-1(|(Σ(V[y])/(Σ(V[x])|)
+Text(56,0,"V[x] = Vcos(θ)
+Text(70,0,"V[y] = Vsin(θ)
+Text(98,0,"A * B = |A||B|cos(θ)
+Text(112,0,"A x B = ABsin(θ)
+Pause 
+Goto A1
+
+Lbl B2
+ClrDraw
+Text(0,0,"Static Equilibrium (Fnet = 0):
+Text(14,0,"Σ(F[x]) = 0 & Σ(F[y]) = 0
+Text(28,0,"Fn --> perpendicular to surface
+Text(56,0,"Friction:
+Text(70,0,"F[k] = u[k]N
+Text(84,0,"F[s] < u[s]N
+Text(98,0,"u[s] = tan(θ[r]) 
+Pause 
+ClrDraw
+Text(0,0,"Torque & Rotational Equilibrium:
+Text(14,0,"t = Fr(sin(θ)) = F x r
+Text(28,0,"Σ(t) = 0
+Pause 
+Goto A1
+
+Lbl B3
+ClrDraw
+Text(0,0,"Kinematic Equations (Rectilinear)
+Text(28,0,"Average Velocity: v = dx/dt
+Text(42,0,"Average Acceleration: a = dv/dt
+Text(70,0,"Displacement: x = ((v[i] + v[f]) / 2) * t
+Text(84,0,"Constant Accel: x = v[i]t + (1/2)(a)(t)²
+
+Text(98,0,"Final Velocity: v[f] = v[i] + a(t)
+Text(112,0,"Known Time: x = (v[f]²-v[i]²)/(2a)
+Pause 
+ClrDraw
+Text(0,0,"Free-Fall Version
+Text(28,0,"Height: y = v[i]t + (1/2)(g)(t)²
+
+Text(42,0,"Velocity Given Time: v[f] = v[i] + g(t)
+Text(56,0,"Without Time: y = (v[f]²-v[i]²)/(2g)
+Text(70,0,"g = -9.8
+Pause 
+ClrDraw
+Text(0,0,"Projectile Motion (2D)
+Text(28,0,"Height: y = v[i](sinθ)t + (1/2)(g)(t)²
+
+Text(42,0,"Range: R = v[i](cosθ)t
+Text(56,0,"Velocity: v = √((v[i]cosθ)²+(v[i]sinθ
+
+Text(70,0,"+g(t))²)
+Text(84,0,"Angle of Velocity: θ = tan(v[y]/v[x])
+Text(98,0,"Max Height: v[y] = v[i]sin(θ) + g(t)
+Text(112,0,"Angle of Launch: (1/2)(sin^-1(Rg/v[i]²)
+Pause 
+ClrDraw
+Text(0,0,"Relative Motion
+Text(28,0,"x[PA] = x[PB] + x[BA]
+Text(42,0,"v[PA] = v[PB] + v[BA]
+Pause 
+Goto A1
+
+Lbl B4
+ClrDraw
+Text(0,0,"Newton's 2nd Law
+Text(28,0,"Fnet = ma
+Text(42,0,"Fnet = Σ(Fcause) - Σ(Fimpede)
+Text(56,0,"Weight: W = mg (In Newtons)
+Text(84,0,"Horizontal: Σ(F[x])=Fnet & Σ(F[y]) = 0
+Text(98,0,"Vertical: Σ(F[y])=Fnet & Σ(F[x]) = 0
+Pause 
+ClrDraw
+Text(0,0,"Particles and Center of Mass
+Text(28,0,"COM: r[cm] = 1/M(Σ(m[i]*r[i]))
+Text(42,0,"COM: r[cm] = 1/A(Σ(a[i]*r[i]))
+Text(70,0,"Integral: 1/MfnInt(rdm) = 
+Text(84,0,"fnInt(rdm)/fnInt(dm)
+Text(98,0,"Note: dm = Ldr, L = Lambda
+Text(112,0,"Not Uniform: M = fnInt(Ldx)
+Pause 
+ClrDraw
+Text(0,0,"Momentum
+Text(28,0,"F[avg](t) = M(v[com])
+Text(42,0,"P = Mv
+Text(56,0,"m[1]v[i]+m[2]v[i]=m[1]v[f]+m[2]v[f]
+Text(70,0,"Restitution: e = (v[f2] - v[f1])/(v[i1] -
+Text(84,0,"v[i2])
+Text(112,0,"If e = 1 --> K[i] = K[f]
+Text(126,0,"If e < 1 --> K[i] > K[f]
+Text(140,0,"If e = 0 --> perfect inelasticity
+Pause 
+Goto A1
+
+Lbl B5
+ClrDraw
+Text(0,0,"Conservation of Energy
+Text(28,0,"Wnet = |Fnet||x|cos(θ) = Fnet * x
+Text(42,0,"Wnet = Area under Fnet(x) graph
+Text(56,0,"Power: P = dW/dt = Fvcos(θ)
+Text(84,0,"Kinetic Energy:
+Text(98,0,"One-Dimension: K=(1/2)m(v[f]²-v[i]²)
+Text(112,0,"U[grav] = (m)(g)(y)
+Text(126,0,"E = K + U
+Pause 
+ClrDraw
+Text(0,0,"Full Energy Equation:
+Text(28,0,"1/2(m)(v[i])² + mgy[i] + 1/2(k)(x[i])²
+
+Text(42,0,"+ [-u[k]*Fn*x] = 1/2(m)(v[f])²+
+Text(56,0,"mgy[f]+1/2(k)(x[f])²
+
+Text(84,0,"Momentum:
+Text(98,0,"m[1]v[i]+m[2]v[i]=m[1]v[f]+m[2]v[f]
+Text(112,0,"e = (v[f2] - v[f1])/(v[i1] - v[i2])
+Pause 
+ClrDraw
+Text(0,0,"Springs and Energy
+Text(28,0,"Hooke's Law: F=-kx or kx
+Text(42,0,"W = U[elastic] = 1/2(k)(x[f]-x[i])²
+
+Text(56,0,"v = +/-√((k/m)(A²-x²))
+Text(84,0,"Trigonometric equations:
+Text(98,0,"x(t)=Asin(wt + θ)
+Text(112,0,"v(t)=wAcos(wt + θ)
+Text(126,0,"a(t)=-w²Asin(wt + θ)
+Text(140,0,"θ = Phase shift
+Pause 
+ClrDraw
+Text(0,0,"Springs and Energy (cont)
+Text(28,0,"v[max] = wA
+Text(42,0,"a[max] = w²A
+Text(56,0,"w = √(k/m)
+Text(70,0,"Frequency: f = 1/T
+Text(84,0,"w = 2π/T = 2πf
+Text(98,0,"Period: T = 2π√(m/k)
+Text(112,0,"Frequency: f = 1/2π√(k/m)
+Pause 
+ClrDraw
+Text(0,0,"Simple Pendulum Equations
+Text(28,0,"Frequency: 1/2π√(g/L)
+Text(42,0,"Period: T = 2π√(L/g)
+Text(56,0,"Angular Velocity: w = √(g/L)
+Pause 
+Goto A1
+
+Lbl B6
+ClrDraw
+Text(0,0,"Rotational Dynamics 
+Text(14,0,"θ = Angular Displacement
+Text(28,0,"w[avg] = dθ/dt
+Text(42,0,"a[avg] = dw/dt
+Text(70,0,"Angular Velocity and Acceleration
+Text(84,0,"w[f] = w[i] + at
+Text(98,0,"θ = w[i](t) + 1/2(a)(t)²
+
+Text(112,0,"θ = (w[f]² - w[i]²)/(2a)
+Text(140,0,"Note: a = angular acceleration
+Pause 
+ClrDraw
+Text(0,0,"Motion in Horizontal Circle
+Text(14,0,"Tangential:
+Text(28,0,"v[t] = (r)(w)
+Text(42,0,"a[t] = (r)(a)
+Text(56,0,"F[T] = (m)(a[t]) = (m)(r)(a)
+Text(70,0,"Centripedal:
+Text(84,0,"a[c] = v[t]²/r = (r)(w)²
+
+Text(98,0,"F[c] = ma[c] = (m)(v[t]²/r)
+Text(112,0,"Total Acell: a = √(a[t]² + a[c]²)
+Text(126,0,"Note:(m)(v[t]²/r) = u[s]F[N]
+Text(140,0,"Note:(m)(v[t]²/r) = F[N]sinθ
+
+Pause 
+ClrDraw
+Text(0,0,"Motion in Vertical Circle
+Text(28,0,"Critical Velocity and Forces:
+Text(42,0,"F[bottom] = mv[t]²/r + mg
+Text(56,0,"F[top] = mv[t]²/r - mg
+Text(70,0,"V[c] = √(gr)
+Pause 
+ClrDraw
+Text(0,0,"Rotational Kinetic Energy and Work
+Text(28,0,"W = (t)(θ)
+Text(42,0,"P = dW/dt = (t)(w)
+Text(56,0,"K = 1/2(I)(w)²
+
+Text(70,0,"Default Inertia: I = mr²
+
+Text(98,0,"Proceed to see the FULL energy 
+Text(112,0,"equation
+Pause 
+ClrDraw
+Text(0,0,"Full Energy Convservation Equation
+Text(28,0,"1/2(m)(v[i])² + mgy[i] + 1/2(k)(x[i])²
+
+Text(42,0,"+ 1/2(I)(w[i])² + [-u[k]*Fn*x] = 
+Text(56,0,"1/2(m)(v[f])²+ mgy[f]+1/2(k)(x[f])² + 
+Text(70,0,"1/2(I)(w[f])²
+
+Pause 
+ClrDraw
+Text(0,0,"Rotational Torque (t = torque)
+Text(28,0,"Σ(t[net]) = Σ(F[T]r) = Σ(mr²)a = Ia
+Text(56,0,"Conservation of Angular Momentum
+Text(70,0,"L = r x p = m(r x v) --> L = mr²w = Iw
+Text(84,0,"I[1]w[1] + I[2]w[2] = I[1]w[1] + I[2]w[2]
+Pause 
+Goto A1
+Lbl B7
+ClrDraw
+Text(0,0,"Universal Gravitation Formulas
+Text(28,0,"G = 6.67 * 10^-11
+Text(42,0,"M[E] = 5.95 * 10^24
+Text(56,0,"F[G] = G * (m[1]m[2])/(r)²
+
+Text(70,0,"Center of Earth: G * (M[E]m)/(r)²
+
+Text(84,0,"a = F[G]/m = (GM[E])/(r+h)²
+
+Text(98,0,"Speed of Sat: v = √((G*M[E])/(r))
+Text(112,0,"Altitude: R = √((G*M[E]*T²)/(4π²)
+Pause 
+Goto A1
+
+Lbl C1
+ClrDraw
+Text(0,0,"Electrostatics
+Text(28,0,"F[e] = k[e] *|(q[1]q[2])/(r)²|
+Text(42,0,"E = F[e]/q = k[e] * |q/(r)²|
+Text(56,0,"V[B] - V[A] = U[E]/q 
+Text(70,0,"a = F/m = qE/m
+Text(84,0,"U[E] = qEd = qV
+Text(98,0,"V = U/q = k[e] * q/r
+Text(112,0,"V = Ed 
+Text(126,0,"qV = 1/2mv² = U = K
+Pause 
+ClrDraw
+Text(0,0,"Electrostatics and Work (cont)
+Text(28,0,"W[A->B] = q(V[B] - V[A]
+Text(56,0,"Parallel Plates: E = V/d
+Pause 
+Goto A2
+
+Lbl C2
+ClrDraw
+Text(0,0,"Gausses Law, Spheres
+Text(28,0,"Flux = EAcosθ --> EA
+Text(42,0,"Point charge: E = kQ/(R)²
+
+Text(56,0,"Solid Sphere r<R: E = kQr/(R)^3
+Text(70,0,"EA = Q[enc]/epsilon
+Text(84,0,"p = q/V, sigma = q/A
+Text(98,0,"Plates: sigma/(2*epsilon)
+Text(112,0,"Parallel Plates: sigma/epsilon
+Pause 
+ClrDraw
+Text(0,0,"Cylinder:
+Text(28,0,"Lambda = q/L
+Text(42,0,"EA = (Lambda*L)/epsilon 
+Text(56,0,"A = 2πrL
+Pause 
+Goto A2
+Lbl C3
+ClrDraw
+Text(0,0,"DC Circuits Fundamentals:
+Text(28,0,"I = dQ/dt = nqv[d]A
+Text(42,0,"Resistivity: p = E/J
+Text(56,0,"Conductivity: sigma = 1/p
+Text(70,0,"I = Integral(JdA)
+Text(84,0,"Resistance: R = p*(l/A)
+Pause 
+ClrDraw
+Text(0,0,"E-Fields & Power
+Text(28,0,"E-Field = V / L, L = Length
+Text(56,0,"P = VI = (I)²*R
+Pause 
+ClrDraw
+Text(0,0,"Resistors: Series & Parallel
+Text(14,0,"R = V / I, V = IR, I = V/R
+Text(42,0,"Series: R[T] = R[1] + R[2]...R[N]
+Text(56,0,"Parallel: 1/R[T] = 1/R[1]...+1/R[N]
+Text(84,0,"Terminal(Actual) Voltage:
+Text(98,0,"E - Ir <--Internal resistnance
+Text(126,0,"Note: V carries in parallel, I in series
+Pause 
+ClrDraw 
+Text(0,0,"Capacitors: Series & Parallel
+Text(28,0,"C = Q/V = (k)(epsilon)(A/d)
+Text(56,0,"Potential Energy: U = 1/2QV = 1/2CV²
+
+Text(70,0,"Series: 1/C[T] = 1/C[1]...+1/C[n]
+Text(84,0,"Parallel: C[T] = C[1]...+C[n]
+Pause 
+Goto A2
+
+Lbl C4
+ClrDraw
+Text(0,0,"Magnestism 
+Text(28,0,"Charged Particle:
+Text(42,0,"F[B] = qvBsin(θ)
+Text(56,0,"F[Lorentz] = q(E + vBsin(θ))
+Text(84,0,"Circular Orbit:
+Text(98,0,"mv²/r = qvB, r = mv/qB
+Text(126,0,"Magnetic Force on Conductor:
+Text(140,0,"F[B] = ILBsin(θ)
+Pause 
+ClrDraw
+Text(0,0,"Torque:
+Text(14,0,"t = NIABsin(θ)
+Text(28,0,"Biot-Savart Law:
+Text(42,0,"B = (u[0]/4π)((Ilsinθ)/(r)²)
+Text(70,0,"Outside long conductor:
+Text(84,0,"B = u[0]I / 2πr
+Text(98,0,"Inside long conductor:
+Text(112,0,"B = u[0]Ir / 2πR²
+
+Pause 
+ClrDraw
+Text(0,0,"Inside of solenoid:
+Text(14,0,"B = u[0]IN / L
+Text(28,0,"Inside of toroid:
+Text(42,0,"B = u[0]IN / 2πr 
+Text(56,0,"Center of wire loop:
+Text(70,0,"B = u[0]NI / 2R
+Text(98,0,"Parrallel Conductors:
+Text(112,0,"F = (u[0]I[1]I[2]l)/(2πd)
+Text(140,0,"e = Blv
+Pause 
+Goto A2
+Lbl C5
+ClrDraw
+Text(0,0,"Induction
+Text(28,0,"Charging RC Circuits:
+Text(42,0,"q = CV(1-e^((-1/RC)t))
+Text(56,0,"V[c] = V[0](1-e^((-1/RC)t)))
+Text(84,0,"Discharging RC Circuits
+Text(112,0,"V = V[0](e^((-1/RC)t)))
+Text(126,0,"q = CV[0](e^((-1/RC)t)))
+Text(140,0,"I = V[0]/R * (e^((-1/RC)t)))
+Pause 
+ClrDraw
+Text(0,0,"RL Circuits:
+Text(28,0,"Charging
+Text(42,0,"I = (V/R)(1-e^(-R/L)t)
+Text(70,0,"Discharging
+Text(84,0,"I = (V/R)(e^(-R/L)t)
+Text(112,0,"Power:
+Text(126,0,"P = I²R + LI(dI/dt)
+Pause 
+Goto A2
+Lbl QU
+ClrHome
+Return
